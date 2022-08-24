@@ -1,0 +1,29 @@
+{
+  "name": "validate-or-throw",
+  "version": "1.0.0",
+  "description": "Small fastest-validator wrapper that either validates an object against a given schema or throws an error.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fastest-validator",
+    "validate",
+    "error",
+    "throw",
+    "schema"
+  ],
+  "author": "Anthony Mugendi <ngurumugz@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugendi/validate-or-throw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mugendi/validate-or-throw/issues"
+  },
+  "homepage": "https://github.com/mugendi/validate-or-throw#readme",
+  "dependencies": {
+    "fastest-validator": "^1.13.0"
+  }
+}
