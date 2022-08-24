@@ -18,12 +18,12 @@ function validate_or_throw(obj, schema) {
 
 	const check = v.compile(schema);
 	const valid = check(obj);
+	const sep = '\n'+'-'.repeat(process.stdout.columns)
 
 	if (valid !== true) {
+		console.log(valid);
 		throw new Error(
-			`Validation Error! \n  - ${valid
-				.map((e) => e.message)
-				.join('\n  - ')}`
+			`VALIDATION ERRORS!${sep}` + valid.map(o=>`\n\tType: ${o.type}\n\tMessage: ${o.message}\n\tField: ${o.field}\n\tExpected: ${o.expected}\n\tGot: ${o.actual}`).join(sep) + sep + '\n\n'
 		);
 	}
 }

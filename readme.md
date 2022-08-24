@@ -2,6 +2,8 @@
 
 A tiny wrapper around fastest-validator to either validate an object against a given schema or throw an error.
 
+![screenshot](https://repository-images.githubusercontent.com/528328110/a6a53839-d4fa-4c51-b174-6dda72a659c4)
+
 ## To use
 
 ```javascript
